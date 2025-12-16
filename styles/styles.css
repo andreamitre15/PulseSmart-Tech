@@ -276,6 +276,10 @@ textarea:focus-visible {
 
 @media (min-width: 320px) and (max-width: 430px) {
 
+    main {
+        width: 100%;
+        height: auto;
+    }
     #portada {
         display: flex;
         flex-direction: column;
