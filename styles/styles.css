@@ -286,7 +286,7 @@ textarea:focus-visible {
     }
 
     .inicio2 {
-        width: 55vh;
+        width: 45vh;
     }
 
     #texto {
@@ -300,8 +300,7 @@ textarea:focus-visible {
     .galeria {
         grid-template-columns: 1 1fr;
         grid-template-rows: auto;
-        grid-template-areas:
-            "p1"
+        grid-template-areas: "p1"
             "p2"
             "p3"
             "p4"
