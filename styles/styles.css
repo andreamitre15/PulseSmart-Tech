@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Momo Trust Display;
+}
+
+/* Estructura principal*/
+header {
+    display: flex;
+    background-color: snow;
+    align-items: center;
+    gap: 1rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+    margin-left: auto;
+}
+
+header img {
+    height: 10vh;
+}
+
+header nav a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300px;
+    color: hotpink;
+}
+
+.logo {
+    height: 10vh;
+    width: 10vh;
+}
+
+.nav-link {
+    color: blueviolet;
+}
+
+.navbar-nav .nav-link.active {
+    color: blueviolet;
+    border: 1px solid hotpink;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 35 px;
+    color: blueviolet;
+}
+
+h2 {
+    color: blueviolet;
+}
+
+h3 {
+    color: blueviolet;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+#violetnos {
+    color: blueviolet;
+}
+
+/*Tuve que poner margin ya que sino no se veian las viñetas */
+
+.list {
+    list-style-type: circle;
+    margin-left: 25px;
+}
+
+#nosotros {
+    height: 75vh;
+}
+
+.productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.productos img {
+    height: 35vh;
+    width: 35vh;
+}
+
+.productos h3 {
+    color: blueviolet;
+}
+
+.violet {
+    color: black;
+}
+
+.pink {
+    display: grid;
+    grid-template-columns: repeat(3, 50vh);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "f5 f2 f1"
+        "f3 f4 f1";
+    align-items: center;
+    justify-items: center;
+}
+
+.f1 {
+    grid-area: f1;
+}
+
+.f2 {
+    grid-area: f2;
+}
+
+.f3 {
+    grid-area: f3;
+}
+
+.f4 {
+    grid-area: f4;
+}
+
+.f5 {
+    grid-area: f5;
+}
+
+.pink img {
+    height: 30vh;
+    width: 30vh;
+    margin: auto;
+}
+
+.f1 img {
+    height: 50vh;
+    width: 50vh;
+}
+
+.descuentos {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+    grid-template-areas:
+        "d1 d2 d3 d4";
+    align-items: start;
+    justify-items: start;
+    justify-content: start;
+    gap: 20px;
+}
+
+.d1 {
+    grid-area: d1;
+}
+
+.d2 {
+    grid-area: d2;
+}
+
+.d3 {
+    grid-area: d3;
+}
+
+.d4 {
+    grid-area: d4;
+}
+
+
+.descuentos img {
+    height: 35vh;
+    width: 35vh;
+}
+
+body {
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: snow;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 1rem;
+    font-size: 25px;
+    color: blueviolet;
+    gap: 5rem;
+}
+
+footer a {
+    border: none;
+    outline: none;
+}
+
+.redes i {
+    color: hotpink;
+    border: none;
+    outline: none;
+    margin: 15px;
+}
+
+.fo {
+    line-height: 60px;
+    font-size: 15px;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 120, 255, .35);
+    border-color: #0078ff;
+}
+
+#portada {
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+#portada img {
+    height: 60vh;
+    width: 60vh;
+}
+
+#texto {
+    height: 40vh;
+    width: 80vh;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "p2 p2 p1 p4"
+        "p2 p2 p3 p5";
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.p1 {
+    grid-area: p1;
+}
+
+.p2 {
+    grid-area: p2;
+}
+
+.p2 img {
+    height: 55vh;
+    width: 70vh;
+}
+
+.p3 {
+    grid-area: p3;
+}
+
+.p4 {
+    grid-area: p4;
+}
+
+.p5 {
+    grid-area: p5;
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+
+    #portada {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inicio {
+        width: 60vh;
+    }
+
+    .inicio2 {
+        width: 55vh;
+    }
+
+    #texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .galeria {
+        grid-template-columns: 1 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "p1"
+            "p2"
+            "p3"
+            "p4"
+            "p5";
+        column-gap: 0;
+        row-gap: 12px;
+    }
+
+    .pink {
+        grid-template-columns: 1 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "f1"
+            "f2"
+            "f3"
+            "f4"
+            "f5";
+        align-items: center;
+        justify-items: center;
+        row-gap: 12px;
+    }
+
+    .descuentos {
+        grid-template-columns: 1 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "d1"
+            "d2"
+            "d3"
+            "d4";
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        column-gap: 0;
+        row-gap: 12px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0;
+    }
+
+}
+
+@media (min-width: 431px) and (max-width: 800px) {
+
+    .galeria {
+        grid-template-columns: repeat(2 1fr);
+        grid-template-rows: repeat(3 1fr);
+        grid-template-areas:
+            "p1 p5"
+            "p3 p4"
+            "p2 p2";
+        column-gap: 10px;
+        row-gap: 12px;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pink {
+        grid-template-columns: repeat(2 1fr)
+        grid-template-rows: repeat(3 1fr);
+        grid-template-areas:
+            "f1 f1"
+            "f2 f3"
+            "f4 f5"; 
+        row-gap: 12px;
+        justify-items: center;
+        align-items: center;
+        column-gap: 10px;
+    }
+    .pink img {
+        width: 50vh;
+        height: 50vh;
+    }
+    .f1 {
+        width: max-content;
+    }
+
+    .descuentos {
+        grid-template-columns: 2 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "d1 d2"
+            "d3 d4";
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        column-gap: 12px;
+        row-gap: 12px;
+    }
+
+}
