@@ -277,7 +277,7 @@ textarea:focus-visible {
 @media (min-width: 320px) and (max-width: 430px) {
 
     main {
-        width: 100%;
+        width: auto;
         height: auto;
     }
     #portada {
