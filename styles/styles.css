@@ -223,7 +223,7 @@ textarea:focus-visible {
 #portada {
     display: flex;
     gap: 50px;
-    margin-top: 50px;
+    margin-top: 15px;
     align-items: center;
     justify-content: center;
 }
@@ -235,7 +235,7 @@ textarea:focus-visible {
 
 #texto {
     height: 60vh;
-    width: 50vh;
+    width: 50%;
 }
 
 .galeria {
