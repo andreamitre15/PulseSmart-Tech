@@ -228,13 +228,13 @@ textarea:focus-visible {
 }
 
 #portada img {
-    height: 10%;
-    width: 10%;
+    height: 40%;
+    width: 30%;
 }
 
 #texto {
-    height: 60vh;
-    width: 50%;
+    height: 60%;
+    width: 60%;
 }
 main body {
     overflow-x: hidden;
