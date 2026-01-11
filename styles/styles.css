@@ -190,7 +190,6 @@ footer {
     display: flex;
     justify-content: center;
     margin-top: 10px;
-    padding: 1rem;
     font-size: 25px;
     color: blueviolet;
     gap: 5rem;
@@ -229,13 +228,16 @@ textarea:focus-visible {
 }
 
 #portada img {
-    height: 30vh;
+    height: 40vh;
     width: 40vh;
 }
 
 #texto {
     height: 60vh;
     width: 50%;
+}
+main body {
+    overflow-x: hidden;
 }
 
 .galeria {
