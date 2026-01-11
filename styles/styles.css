@@ -50,9 +50,6 @@ header nav a {
     border: 1px solid hotpink;
     border-radius: 10px;
 }
-main {
-    width: fit-content;
-}
 
 h1 {
     font-size: 35 px;
@@ -240,8 +237,8 @@ textarea:focus-visible {
 }
 
 #texto {
-    height: 40vh;
-    width: 60vh;
+    height: 60vh;
+    width: 70vh;
 }
 
 .galeria {
