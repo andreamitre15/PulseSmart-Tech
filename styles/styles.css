@@ -76,7 +76,8 @@ p {
 
 .list {
     list-style-type: circle;
-    margin-left: 25px;
+    margin-left: 5px;
+    font-size:medium;
 }
 
 #nosotros {
@@ -141,8 +142,8 @@ p {
 }
 
 .f1 img {
-    height: 50vh;
-    width: 50vh;
+    height: 35vh;
+    width: 35vh;
 }
 
 .descuentos {
