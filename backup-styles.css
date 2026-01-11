@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Momo Trust Display;
-    width: auto;
 }
 
 /* Estructura principal*/
@@ -91,8 +90,8 @@ p {
 }
 
 .productos img {
-    height: 15vh;
-    width: 15vh;
+    height: 35vh;
+    width: 35vh;
 }
 
 .productos h3 {
@@ -135,8 +134,8 @@ p {
 }
 
 .pink img {
-    height: 20vh;
-    width: 20vh;
+    height: 30vh;
+    width: 30vh;
     margin: auto;
 }
 
@@ -231,8 +230,8 @@ textarea:focus-visible {
 }
 
 #portada img {
-    height: 40vh;
-    width: 40vh;
+    height: 60vh;
+    width: 60vh;
 }
 
 #texto {
@@ -277,9 +276,7 @@ textarea:focus-visible {
 .p5 {
     grid-area: p5;
 }
-.footerc {
-    height: 65vh;
-}
+
 @media (min-width: 320px) and (max-width: 430px) {
 
     main {
