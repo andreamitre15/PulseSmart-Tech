@@ -228,8 +228,8 @@ textarea:focus-visible {
 }
 
 #portada img {
-    height: 50%;
-    width: 35%;
+    height: 50vh;
+    width: 50vh;
 }
 
 #texto {
