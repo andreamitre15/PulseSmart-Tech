@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Momo Trust Display;
+    width: auto;
 }
 
 /* Estructura principal*/
@@ -76,6 +77,13 @@ p {
 .list {
     list-style-type: circle;
     margin-left: 25px;
+    font-size: medium;
+}
+
+body {
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: snow;
 }
 
 #nosotros {
@@ -90,8 +98,8 @@ p {
 }
 
 .productos img {
-    height: 35vh;
-    width: 35vh;
+    height: 15vh;
+    width: 15vh;
 }
 
 .productos h3 {
@@ -134,14 +142,14 @@ p {
 }
 
 .pink img {
-    height: 30vh;
-    width: 30vh;
+    height: 20vh;
+    width: 20vh;
     margin: auto;
 }
 
 .f1 img {
-    height: 50vh;
-    width: 50vh;
+    height: 25vh;
+    width: 25vh;
 }
 
 .descuentos {
@@ -181,11 +189,7 @@ p {
     width: 35vh;
 }
 
-body {
-    margin-left: 25px;
-    margin-right: 25px;
-    background-color: snow;
-}
+
 
 footer {
     display: flex;
@@ -230,13 +234,13 @@ textarea:focus-visible {
 }
 
 #portada img {
-    height: 60vh;
-    width: 60vh;
+    height: 30vh;
+    width: 40vh;
 }
 
 #texto {
-    height: 40vh;
-    width: 80vh;
+    height: 60vh;
+    width: 50vh;
 }
 
 .galeria {
@@ -261,8 +265,8 @@ textarea:focus-visible {
 }
 
 .p2 img {
-    height: 55vh;
-    width: 70vh;
+    height: 45vh;
+    width: 50vh;
 }
 
 .p3 {
@@ -277,12 +281,17 @@ textarea:focus-visible {
     grid-area: p5;
 }
 
+.footerc {
+    height: 65vh;
+}
+
 @media (min-width: 320px) and (max-width: 430px) {
 
     main {
         width: auto;
         height: auto;
     }
+
     #portada {
         display: flex;
         flex-direction: column;
@@ -307,7 +316,7 @@ textarea:focus-visible {
     .galeria {
         grid-template-columns: 1 1fr;
         grid-template-rows: auto;
-        grid-template-areas: 
+        grid-template-areas:
             "p1"
             "p2"
             "p3"
@@ -371,21 +380,22 @@ textarea:focus-visible {
     }
 
     .pink {
-        grid-template-columns: repeat(2 1fr)
-        grid-template-rows: repeat(3 1fr);
+        grid-template-columns: repeat(2 1fr) grid-template-rows: repeat(3 1fr);
         grid-template-areas:
             "f1 f1"
             "f2 f3"
-            "f4 f5"; 
+            "f4 f5";
         row-gap: 12px;
         justify-items: center;
         align-items: center;
         column-gap: 10px;
     }
+
     .pink img {
         width: 50vh;
         height: 50vh;
     }
+
     .f1 {
         width: max-content;
     }

@@ -76,8 +76,14 @@ p {
 
 .list {
     list-style-type: circle;
-    margin-left:25px;
-    font-size:medium;
+    margin-left: 25px;
+    font-size: medium;
+}
+
+body {
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: snow;
 }
 
 #nosotros {
@@ -174,25 +180,16 @@ p {
     grid-area: d4;
 }
 
-.footer {
-    height: 65vh;
-}
-
 .descuentos img {
     height: 35vh;
     width: 35vh;
 }
 
-body {
-    margin-left: 25px;
-    margin-right: 25px;
-    background-color: snow;
-}
 
 footer {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 10px;
     padding: 1rem;
     font-size: 25px;
     color: blueviolet;
@@ -222,7 +219,9 @@ textarea:focus-visible {
     box-shadow: 0 0 0 3px rgba(0, 120, 255, .35);
     border-color: #0078ff;
 }
-
+.portadamain{
+    height: 70vh;
+}
 #portada {
     display: flex;
     gap: 50px;
@@ -238,7 +237,7 @@ textarea:focus-visible {
 
 #texto {
     height: 60vh;
-    width: 70vh;
+    width: 50vh;
 }
 
 .galeria {
@@ -278,15 +277,18 @@ textarea:focus-visible {
 .p5 {
     grid-area: p5;
 }
+
 .footerc {
     height: 65vh;
 }
+
 @media (min-width: 320px) and (max-width: 430px) {
 
     main {
         width: auto;
         height: auto;
     }
+
     #portada {
         display: flex;
         flex-direction: column;
@@ -311,7 +313,7 @@ textarea:focus-visible {
     .galeria {
         grid-template-columns: 1 1fr;
         grid-template-rows: auto;
-        grid-template-areas: 
+        grid-template-areas:
             "p1"
             "p2"
             "p3"
@@ -375,21 +377,22 @@ textarea:focus-visible {
     }
 
     .pink {
-        grid-template-columns: repeat(2 1fr)
-        grid-template-rows: repeat(3 1fr);
+        grid-template-columns: repeat(2 1fr) grid-template-rows: repeat(3 1fr);
         grid-template-areas:
             "f1 f1"
             "f2 f3"
-            "f4 f5"; 
+            "f4 f5";
         row-gap: 12px;
         justify-items: center;
         align-items: center;
         column-gap: 10px;
     }
+
     .pink img {
         width: 50vh;
         height: 50vh;
     }
+
     .f1 {
         width: max-content;
     }
