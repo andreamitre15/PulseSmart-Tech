@@ -50,6 +50,9 @@ header nav a {
     border: 1px solid hotpink;
     border-radius: 10px;
 }
+main {
+    width: fit-content;
+}
 
 h1 {
     font-size: 35 px;
@@ -142,8 +145,8 @@ p {
 }
 
 .f1 img {
-    height: 35vh;
-    width: 35vh;
+    height: 25vh;
+    width: 25vh;
 }
 
 .descuentos {
@@ -232,13 +235,13 @@ textarea:focus-visible {
 }
 
 #portada img {
-    height: 40vh;
+    height: 30vh;
     width: 40vh;
 }
 
 #texto {
     height: 40vh;
-    width: 80vh;
+    width: 60vh;
 }
 
 .galeria {
@@ -263,8 +266,8 @@ textarea:focus-visible {
 }
 
 .p2 img {
-    height: 55vh;
-    width: 70vh;
+    height: 45vh;
+    width: 50vh;
 }
 
 .p3 {
