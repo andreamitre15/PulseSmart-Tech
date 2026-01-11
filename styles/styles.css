@@ -219,9 +219,7 @@ textarea:focus-visible {
     box-shadow: 0 0 0 3px rgba(0, 120, 255, .35);
     border-color: #0078ff;
 }
-.portadamain{
-    height: 70vh;
-}
+
 #portada {
     display: flex;
     gap: 50px;
