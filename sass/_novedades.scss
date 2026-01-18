@@ -70,14 +70,9 @@ body {
     }
 
     .pink img {
-        height: 20vh;
-        width: 20vh;
-        margin: auto;
-    }
-
-    .f1 img {
         height: 25vh;
-        width: 25vh;
+        width: auto;
+        margin: 0;
     }
 
 
@@ -95,21 +90,21 @@ body {
             justify-items: center;
             row-gap: 12px;
 
-            .f1,
+            .f1 
             .f2,
             .f3,
             .f4,
             .f5 {
+
                 width: 50vw;
                 margin: 0 auto;
                 text-align: center;
             }
 
             .pink img {
-                display: block;
-                margin: 0 auto;
+                margin: 0;
                 width: 100%;
-                height: auto;
+                height: 25vh;
             }
 
 
@@ -139,10 +134,9 @@ body {
             }
 
             .descuentos img {
-                display: block;
-                margin: 0 auto;
+                margin: 0;
                 width: 100%;
-                height: auto;
+                height: 25vh;
             }
         }
 

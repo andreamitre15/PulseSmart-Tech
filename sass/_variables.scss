@@ -57,3 +57,12 @@ body {
     border-radius: 15px;
     gap: 20px
 }
+
+%nov {
+    @include flex (row, wrap, space-around, center);
+    width: 20vw;
+    height: auto;
+    border: 2px solid $otro;
+    border-radius: 15px;
+    gap: 20px
+}
