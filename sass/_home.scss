@@ -1,0 +1,80 @@
+@use "variables" as v;
+
+
+body {
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: v.$nieve;
+
+    main {
+
+        h1 {
+            font-size: 35 px;
+            color: v.$letras;
+        }
+
+        h2 {
+            color: v.$letras;
+        }
+
+        h3 {
+            color: v.$letras;
+        }
+
+        p {
+            font-family: sans-serif;
+        }
+
+        #violetnos {
+            color: v.$letras;
+        }
+
+        .portada {
+            @include v.flex (row, nowrap, center, space-around);
+
+            .inicio {
+
+
+                .list {
+                    list-style-type: circle;
+                    margin-left: 25px;
+                    font-size: medium;
+                }
+            }
+
+
+
+        }
+
+    }
+
+
+}
+
+
+@include v.tablet {
+    body {
+        height: auto;
+        width: auto;
+    }
+}
+
+@include v.mobile {
+
+
+    main {
+        width: auto;
+        height: auto;
+
+        .portada {
+            @include v.flex (column, nowrap, center, center);
+
+
+            .inicio {
+                .list {
+                    width: 70%;
+                }
+            }
+        }
+    }
+}

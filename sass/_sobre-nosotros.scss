@@ -1,0 +1,113 @@
+@use "variables" as v;
+
+body {
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: v.$nieve;
+
+    main {
+        margin-bottom: 10vh;
+
+        .violet {
+            color: v.$otro
+        }
+
+        .nos {
+            @include v.flex (row, nowrap, space-around, center);
+
+            .nos1 {
+                @extend %nos;
+                background-color: darkmagenta;
+
+                img {
+                    width: 15vw;
+                    height: 40vh;
+                }
+            }
+
+            .nos2 {
+                @extend %nos;
+                background-color: deeppink;
+
+                img {
+                    width: 15vw;
+                    height: 40vh;
+                }
+            }
+
+            .nos3 {
+                @extend %nos;
+                background-color: mediumorchid;
+
+                img {
+                    width: 15vw;
+                    height: 40vh;
+                }
+            }
+
+            @include v.mobile {
+                @include v.flex (column, nowrap, center, center);
+                .nos1 {
+                    width: 90vw;
+                    height: 50vh;
+
+                    img {
+                        width: 50vw;
+                        height: 50vh;
+                    }
+                }
+                .nos2 {
+                    width: 90vw;
+                    height: 50vh;
+
+                    img {
+                        width: 50vw;
+                        height: 50vh;
+                    }
+                }
+                .nos3 {
+                    width: 90vw;
+                    height: 50vh;
+
+                    img {
+                        width: 50vw;
+                        height: 50vh;
+                    }
+                }
+            }
+            @include v.tablet {
+                @include v.flex (row, nowrap, center, center);
+                .nos1 {
+                    width: 40vw;
+                    height: 40vh;
+
+                    img {
+                        width: 30vw;
+                        height: 30vh;
+                    }
+                }
+                .nos2 {
+                    width: 40vw;
+                    height: 40vh;
+
+                    img {
+                        width: 30vw;
+                        height: 30vh;
+                    }
+                }
+                .nos3 {
+                    width: 40vw;
+                    height: 40vh;
+
+                    img {
+                        width: 30vw;
+                        height: 30vh;
+                    }
+                }
+            }
+
+
+
+        }
+    }
+}

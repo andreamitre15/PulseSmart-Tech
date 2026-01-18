@@ -1,0 +1,33 @@
+@use "variables" as v;
+
+body {
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: v.$nieve;
+
+    .footerc {
+        height: 60vh;
+    }
+
+    input:focus-visible,
+    textarea:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(0, 120, 255, .35);
+        border-color: #0078ff;
+    }
+}
+
+@include v.tablet {
+    body {
+        height: auto;
+        width: auto;
+    }
+
+}
+
+@include v.mobile {
+    body {
+        height: auto;
+        width: auto;
+    }
+}

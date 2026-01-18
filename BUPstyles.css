@@ -180,22 +180,16 @@ body {
     grid-area: d4;
 }
 
-.footer {
-    height: 65vh;
-}
-
 .descuentos img {
     height: 35vh;
     width: 35vh;
 }
 
 
-
 footer {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
-    padding: 1rem;
+    margin-top: 10px;
     font-size: 25px;
     color: blueviolet;
     gap: 5rem;
@@ -228,19 +222,22 @@ textarea:focus-visible {
 #portada {
     display: flex;
     gap: 50px;
-    margin-top: 50px;
+    margin-top: 15px;
     align-items: center;
     justify-content: center;
 }
 
 #portada img {
-    height: 30vh;
-    width: 40vh;
+    height: 60vh;
+    width: 50vh;
 }
 
 #texto {
-    height: 60vh;
-    width: 50vh;
+    height: 60%;
+    width: 60%;
+}
+main body footer {
+    overflow-x: hidden;
 }
 
 .galeria {
@@ -380,7 +377,8 @@ textarea:focus-visible {
     }
 
     .pink {
-        grid-template-columns: repeat(2 1fr) grid-template-rows: repeat(3 1fr);
+        grid-template-columns: repeat(2 1fr);
+        grid-template-rows: repeat(3 1fr);
         grid-template-areas:
             "f1 f1"
             "f2 f3"
@@ -391,26 +389,7 @@ textarea:focus-visible {
         column-gap: 10px;
     }
 
-    .pink img {
-        width: 50vh;
-        height: 50vh;
-    }
-
-    .f1 {
-        width: max-content;
-    }
-
-    .descuentos {
-        grid-template-columns: 2 1fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-            "d1 d2"
-            "d3 d4";
-        justify-items: center;
-        align-items: center;
-        justify-content: center;
-        column-gap: 12px;
-        row-gap: 12px;
-    }
+   
+  
 
 }

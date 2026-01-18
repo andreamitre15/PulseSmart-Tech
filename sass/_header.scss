@@ -1,0 +1,32 @@
+@use "variables" as v;
+
+header {
+    display: flex;
+    background-color: snow;
+    align-items: center;
+    gap: 1rem;
+
+    .nav-link {
+    color: v.$letras;
+}
+
+    .navbar-nav {
+        .nav-link.active {
+            color: v.$letras;
+            border: 1px solid v.$rosa;
+            border-radius: 10px;
+        }
+
+    }
+
+    .logo {
+        height: 10vh;
+        width: 10vh;
+    }
+    @include v.tablet {
+        height: auto;
+    }
+    @include v.mobile {
+        height: auto;
+    }
+}

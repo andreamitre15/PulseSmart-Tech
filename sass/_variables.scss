@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap');
+
+$nieve: snow;
+$letras: blueviolet;
+$rosa: hotpink;
+$otro: black;
+$ImperialMomo: Momo Trust Display;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $ImperialMomo;
+    width: auto;
+}
+
+body {
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: $nieve;
+}
+
+// Mixin
+// Responsive Tablet
+
+@mixin tablet {
+    @media (min-width: 451px) and (max-width: 800px) {
+        @content;
+    }
+}
+
+//Responsive Celulares
+
+@mixin mobile {
+    @media (min-width: 320px) and (max-width: 450px) {
+        @content;
+    }
+}
+
+// Flex
+
+@mixin flex ($fd, $fw, $jc, $ai) {
+    display: flex;
+    flex-direction: $fd;
+    flex-wrap: $fw;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+//PLACEHOLDER %
+
+%nos {
+    @include flex (row, wrap, space-around, center);
+    width: 20vw;
+    height: auto;
+    border: 2px solid $otro;
+    border-radius: 15px;
+    gap: 20px
+}

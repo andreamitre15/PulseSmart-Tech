@@ -1,0 +1,37 @@
+@use "variables" as v;
+
+footer {
+    @include v.flex (row, nowrap, center, center);
+    //display: flex;
+    //justify-content: center;
+
+    margin-top: 10px;
+    font-size: 25px;
+    color: v.$letras;
+    gap: 5rem;
+
+    a {
+        border: none;
+        outline: none;
+    }
+
+    .redes i {
+        color: hotpink;
+        border: none;
+        outline: none;
+        margin: 15px;
+    }
+
+    .fo {
+        line-height: 60px;
+        font-size: 15px;
+    }
+
+    @include v.tablet {}
+
+    @include v.mobile {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0;
+    }
+}

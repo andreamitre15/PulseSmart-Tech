@@ -1,0 +1,129 @@
+@use "variables" as v;
+
+body {
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: v.$nieve;
+
+    main {
+        
+        .violet {
+            color: black;
+        }
+
+        .list {
+            list-style-type: circle;
+            margin-left: 25px;
+            font-size: medium;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas:
+                "p2 p2 p1 p4"
+                "p2 p2 p3 p5";
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            .p1 {
+                grid-area: p1;
+            }
+
+            .p2 {
+                grid-area: p2;
+            }
+
+            .p2 img {
+                height: 45vh;
+                width: 50vh;
+            }
+
+            .p3 {
+                grid-area: p3;
+            }
+
+            .p4 {
+                grid-area: p4;
+            }
+
+            .p5 {
+                grid-area: p5;
+            }
+
+            .productos {
+
+                .productos {
+                    @include v.flex (column, nowrap, center, center);
+                    //display: flex;
+                    //flex-direction: column;
+                    //align-items: center;
+                    //text-align: center;
+                }
+
+                img {
+                    height: 15vh;
+                    width: 15vh;
+                }
+            }
+        }
+
+        @include v.mobile {
+            .galeria {
+                grid-template-areas:
+                    "p1"
+                    "p2"
+                    "p3"
+                    "p4"
+                    "p5";
+                place-items: center;
+                row-gap: 12px;
+
+                .p1,
+                .p2,
+                .p3,
+                .p4,
+                .p5 {
+                    width: 50vw;
+                    margin: 0 auto;
+                    text-align: center;
+                }
+
+                .galeria img {
+                    display: block;
+                    margin: 0 auto;
+                    width: 100%;
+                    height: auto;
+                }
+
+            }
+
+        }
+
+        @include v.tablet {
+            body {
+                height: auto;
+                width: auto;
+            }
+        }
+
+
+    }
+
+    .boton {
+        display: inline-block;
+        padding: 10px 20px;
+        border: 2px solid v.$rosa;
+        border-radius: 15px;
+        background-color: hotpink;
+
+        a {
+            color: v.$letras;
+            text-decoration: none;
+        }
+
+    }
+}
