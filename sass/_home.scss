@@ -56,6 +56,12 @@ body {
     body {
         height: auto;
         width: auto;
+
+        .portada {
+            @include v.flex (column, nowrap, center, center);
+            height: 60vh;
+
+        }
     }
 }
 

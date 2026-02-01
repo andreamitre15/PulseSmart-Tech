@@ -127,6 +127,14 @@ body main .portada .inicio .list {
     height: auto;
     width: auto;
   }
+  body .portada {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+  }
 }
 @media (min-width: 320px) and (max-width: 450px) {
   main {
@@ -208,14 +216,14 @@ body main .galeria .productos img {
   body main .galeria .p3,
   body main .galeria .p4,
   body main .galeria .p5 {
-    width: 50vw;
+    width: 18rem;
     margin: 0 auto;
     text-align: center;
   }
   body main .galeria .galeria img {
     display: block;
     margin: 0 auto;
-    width: 100%;
+    width: 18rem;
     height: auto;
   }
 }
@@ -242,31 +250,18 @@ body {
   margin-right: 25px;
   background-color: snow;
 }
-body .descuentos {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr;
-  grid-template-areas: "d1 d2 d3 d4";
-  /* una sola fila */
-  gap: 20px;
+body .cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  justify-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
 }
-body .d1 {
-  grid-area: d1;
-}
-body .d2 {
-  grid-area: d2;
-}
-body .d3 {
-  grid-area: d3;
-}
-body .d4 {
-  grid-area: d4;
-}
-body .descuentos img {
-  width: 100%;
-  height: 25vh;
+body .cards .card img {
+  height: 30vh;
+  width: auto;
 }
 body .pink {
   display: grid;
@@ -303,48 +298,34 @@ body .pink img {
     grid-template-areas: "f1" "f2" "f3" "f4" "f5";
     align-items: center;
     justify-items: center;
+    justify-content: center;
     row-gap: 12px;
   }
   body .pink .f1 .f2,
   body .pink .f3,
   body .pink .f4,
   body .pink .f5 {
-    width: 50vw;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
   }
-  body .pink .pink img {
+  body .pink .f1 .f2 img,
+  body .pink .f3 img,
+  body .pink .f4 img,
+  body .pink .f5 img {
     margin: 0;
     width: 100%;
     height: 25vh;
-  }
-  body .descuentos {
-    grid-template-columns: 1 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "d1" "d2" "d3" "d4";
     justify-items: center;
     align-items: center;
-    justify-content: center;
-    margin: 0;
-    row-gap: 12px;
-  }
-  body .descuentos .d1,
-  body .descuentos .d2,
-  body .descuentos .d3,
-  body .descuentos .d4 {
-    width: 50vw;
-    margin: 0 auto;
-    text-align: center;
-  }
-  body .descuentos .descuentos img {
-    margin: 0;
-    width: 100%;
-    height: 25vh;
   }
 }
 
 @media (min-width: 451px) and (max-width: 800px) {
-  .pink {
+  body .pink {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -352,22 +333,29 @@ body .pink img {
     align-items: center;
     justify-items: center;
   }
-  .pink img {
+  body .pink img {
     height: 10vh;
     width: 20vw;
   }
+  body .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    margin-bottom: 30px;
+  }
+  body .cards .card {
+    flex: 1 1 22%;
+    max-width: 22%;
+    height: 25vh;
+  }
+  body .cards .card img {
+    width: 100%;
+    height: 15vh;
+  }
 }
-.descuentos {
-  grid-template-columns: 2 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "d1 d2" "d3 d4";
-  justify-items: center;
-  align-items: center;
-  justify-content: center;
-  column-gap: 12px;
-  row-gap: 12px;
-}
-
 body {
   margin-left: 25px;
   margin-right: 25px;
@@ -445,32 +433,22 @@ body main .nos .nos3 img {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    gap: 2vw;
   }
-  body main .nos .nos1 {
-    width: 40vw;
-    height: 40vh;
-  }
-  body main .nos .nos1 img {
-    width: 30vw;
-    height: 30vh;
-  }
-  body main .nos .nos2 {
-    width: 40vw;
-    height: 40vh;
-  }
-  body main .nos .nos2 img {
-    width: 30vw;
-    height: 30vh;
-  }
+  body main .nos .nos1,
+  body main .nos .nos2,
   body main .nos .nos3 {
-    width: 40vw;
-    height: 40vh;
+    width: 28vw;
+    height: 35vh;
   }
+  body main .nos .nos1 img,
+  body main .nos .nos2 img,
   body main .nos .nos3 img {
-    width: 30vw;
-    height: 30vh;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
@@ -493,6 +471,9 @@ body textarea:focus-visible {
   body {
     height: auto;
     width: auto;
+  }
+  body .footerc {
+    height: 65vh;
   }
 }
 @media (min-width: 320px) and (max-width: 450px) {
