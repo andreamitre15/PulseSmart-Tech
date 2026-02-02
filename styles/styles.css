@@ -469,8 +469,8 @@ body textarea:focus-visible {
 
 @media (min-width: 451px) and (max-width: 800px) {
   body {
-    height: auto;
     width: auto;
+    height: auto;
   }
   body .footerc {
     height: 65vh;
